@@ -2,18 +2,12 @@ import { isClassContained, toggleContent } from "./click.js";
 
 const slidesElement = document.querySelectorAll(".swiper-slide");
 
-const slidesLength = Array.from(slidesElement).length - 1;
-const slidesVisible = 2;
-const mainBullets = Math.ceil(slidesLength / slidesVisible);
-
 // init Swiper:
 const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: "true",
-    dynamicBullets: true,
-    dynamicMainBullets: mainBullets,
   },
 });
 
