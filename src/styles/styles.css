@@ -1,8 +1,18 @@
 @import "./normalize.css";
 @import "./reset.css";
 
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Regular.woff') format('woff'),
+  url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'TT Lakes Regular';
   color: rgba(126, 126, 130, 1);
 }
 
@@ -45,22 +55,18 @@ body {
   }
 
   .swiper-wrapper {
-    display: flex;
     margin: 16px;
-    margin-bottom: 36px;
   }
 
   .swiper-slide {
     display: flex;
     align-items: center;           
-    flex-shrink: 0;
 
     position: relative;
     margin-right: 16px;
     padding-left: 16px;
     width: 240px !important;
     height: 72px;
-
 
     background-color: #fff;
     border: 1px solid rgba(234, 234, 234, 1);
@@ -128,6 +134,7 @@ body {
     margin: 0;
     row-gap: 16px;
     width: 99vw;
+    transform: none !important;
   }
 
   .swiper-slide {
