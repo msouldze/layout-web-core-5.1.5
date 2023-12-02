@@ -123,22 +123,29 @@ body {
 
 @media (min-width: 768px) {
   .swiper {
+    margin: 0px auto;
     padding: 24px 0 36px;
+    max-width: 768px;
     height: 200px;
+
     transition: all 0.5s;
   }
 
+  .swiper::after {
+    background: transparent;
+  }
+
   .swiper-wrapper {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-gap: 16px 24px;
+    grid-template-columns: repeat(3, minmax(auto, 240px));
     margin: 0;
-    row-gap: 16px;
-    width: 99vw;
+
     transform: none !important;
   }
 
   .swiper-slide {
-    flex-shrink: 1;
+    flex-basis: auto;
     margin-right: 0;
   }
 
@@ -148,7 +155,8 @@ body {
 
   .brands__btns {
     display: block;
-    margin-left: 24px; 
+    max-width: 768px;
+    margin: 0 auto;
     border: none;
   }
 
@@ -191,5 +199,17 @@ body {
     height: 24px;
     background: url('../img/icon.svg') center no-repeat;
     transform: rotate(180deg);
+  }
+}
+
+
+@media (min-width: 1120px) {
+  .swiper, .brands__btns {
+    min-width: 1056px;
+  }
+
+  .swiper-wrapper {
+    grid-gap: 16px 32px;
+    grid-template-columns: repeat(4, minmax(auto, 240px));
   }
 }
