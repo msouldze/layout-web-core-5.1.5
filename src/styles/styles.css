@@ -14,14 +14,21 @@
 body {
   font-family: 'TT Lakes Regular';
   color: rgba(126, 126, 130, 1);
+<<<<<<< HEAD
   background-color: rgba(248, 248, 248, 1);
+=======
+>>>>>>> f3d3ac578ddb8f27d9b0e8291c7e379ff68c8398
 }
 
 @media (min-width: 320px) {
   .brands {
     padding-bottom: 30px;
     width: 100vw;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    background-color: rgba(248, 248, 248, 1);
+>>>>>>> f3d3ac578ddb8f27d9b0e8291c7e379ff68c8398
   }
 
   .brands__title {
